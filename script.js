@@ -20,3 +20,10 @@ function sair(){
     area.innerHTML = "Vc saiu."
 
 }
+
+//testar no console
+function arrays(){
+    var lista = ["Mat", "José", 150]
+    //lista.length = digite no console e veja o tamanho da lista
+    //lista[0] = irá retornar Mat pq é o primeiro item da lista
+}
