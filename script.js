@@ -1,36 +1,32 @@
-// 
+// Spread Operator.
+// let primeiros = [1, 2, 3];
 
-let pessoa = {
-    nome: "Matheus",
-    sobrenome: "Fraga",
-    empresa: "Sujeito Programador",
-    cargo: "Programador FullStack"
-  };
+// let numeros = [...primeiros, 4, 5, 10];
+// console.log(numeros);
+
+// let pessoa = {
+//  nome: "Matheus",
+//  idade: 45,
+//  cargo: "RH"
+// }
+
+// let novaPessoa = {
+//   ...pessoa,
+//   status: "ATIVO",
+//   cidade: "Campo Grande / MS",
+//   telefone: "67959595959"
+// };
+// console.log(novaPessoa);
+
+function novoUsuario(info){
+    let dados = {
+      ...info,
+      status: "ATIVO",
+      inicio: "20/03/2023",
+      codigo: "123123"
+    };
   
-  //console.log(pessoa.nome);
-  //console.log(pessoa.cargo);
+    console.log(dados);
+  }
   
-  // let nome = "TESTE";
-  
-  // const { nome:nomePessoa, cargo, empresa, sobrenome} = pessoa;
-  
-  // console.log("NOME DA PESSOA " + nomePessoa);
-  // console.log(sobrenome);
-  
-  // console.log(empresa);
-  // console.log(cargo);
-  
-  
-  // =================================
-  
-  let nomes = ["Matheus", "Lucas", "Henrique"];
-  
-  // let { 0:matheus, 2:terceiraPessoa } = nomes;
-  
-  // console.log(matheus);
-  // console.log(terceiraPessoa);
-  
-  let [primeironome, segundonome] = nomes;
-  
-  console.log(primeironome);
-  console.log(segundonome);
+  novoUsuario({ nome: "Jose", sobrenome: "Silva", cargo: "DEV" })
