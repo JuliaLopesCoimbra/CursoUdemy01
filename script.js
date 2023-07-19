@@ -1,4 +1,25 @@
-function acao(){
-    document.write("Executando....")
-}
-setInterval(acao, 1000)//setInterval é uma função que repete em intervalo, nesse caso, a funtion acao irá repetir de 1 segundo
+// Objectos.
+
+// let pessoa = {
+//   nome: "Matheus",
+//   idade: 26,
+//   altura: 1.85,
+//   cargo: "Programador FullStack"
+// };
+
+
+// let carro = {
+//   nome: "Golf 1.6",
+//   cor:  "Branco",
+//   potencia: "140cv"
+// };
+
+// console.log(carro);
+
+let usuarios = [
+    {nome: "Matheus", cargo: "Programador", status: "ATIVO"},
+    {nome: "Maria", cargo: "Backend", status: "ATIVO"},
+    {nome: "Jose", cargo: "RH", status: "ATIVO"}
+  ];
+  
+  console.log(usuarios);
