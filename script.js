@@ -1,25 +1,36 @@
-// Objectos.
+// 
 
-// let pessoa = {
-//   nome: "Matheus",
-//   idade: 26,
-//   altura: 1.85,
-//   cargo: "Programador FullStack"
-// };
-
-
-// let carro = {
-//   nome: "Golf 1.6",
-//   cor:  "Branco",
-//   potencia: "140cv"
-// };
-
-// console.log(carro);
-
-let usuarios = [
-    {nome: "Matheus", cargo: "Programador", status: "ATIVO"},
-    {nome: "Maria", cargo: "Backend", status: "ATIVO"},
-    {nome: "Jose", cargo: "RH", status: "ATIVO"}
-  ];
+let pessoa = {
+    nome: "Matheus",
+    sobrenome: "Fraga",
+    empresa: "Sujeito Programador",
+    cargo: "Programador FullStack"
+  };
   
-  console.log(usuarios);
+  //console.log(pessoa.nome);
+  //console.log(pessoa.cargo);
+  
+  // let nome = "TESTE";
+  
+  // const { nome:nomePessoa, cargo, empresa, sobrenome} = pessoa;
+  
+  // console.log("NOME DA PESSOA " + nomePessoa);
+  // console.log(sobrenome);
+  
+  // console.log(empresa);
+  // console.log(cargo);
+  
+  
+  // =================================
+  
+  let nomes = ["Matheus", "Lucas", "Henrique"];
+  
+  // let { 0:matheus, 2:terceiraPessoa } = nomes;
+  
+  // console.log(matheus);
+  // console.log(terceiraPessoa);
+  
+  let [primeironome, segundonome] = nomes;
+  
+  console.log(primeironome);
+  console.log(segundonome);
