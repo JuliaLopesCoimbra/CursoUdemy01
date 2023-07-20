@@ -1,32 +1,20 @@
-// Spread Operator.
-// let primeiros = [1, 2, 3];
+// REST Operator.
 
-// let numeros = [...primeiros, 4, 5, 10];
-// console.log(numeros);
-
-// let pessoa = {
-//  nome: "Matheus",
-//  idade: 45,
-//  cargo: "RH"
+// function convidados(...nomes){
+//   console.log("SEJA BEM VINDO TODOS CONVIDADOS")
+//   console.log(nomes);
 // }
 
-// let novaPessoa = {
-//   ...pessoa,
-//   status: "ATIVO",
-//   cidade: "Campo Grande / MS",
-//   telefone: "67959595959"
-// };
-// console.log(novaPessoa);
+// convidados("Matheus", "Lucas", "Maria", "Ana caroline")
 
-function novoUsuario(info){
-    let dados = {
-      ...info,
-      status: "ATIVO",
-      inicio: "20/03/2023",
-      codigo: "123123"
-    };
+
+function sorteador(...numeros){
+    console.log(numeros);
   
-    console.log(dados);
+    const numeroGerado = Math.floor(Math.random() * numeros.length);
+  
+    console.log("Numero gerado foi: " + numeros[numeroGerado]);
+  
   }
   
-  novoUsuario({ nome: "Jose", sobrenome: "Silva", cargo: "DEV" })
+  sorteador(1, 4, 5, 15, 25, 90, 55, 34)
