@@ -1,34 +1,18 @@
-// Funcoes anonimas
 
-/*
- () => {}
+// includes, startsWith, endsWith
 
- 1- Os parênteses, que é por onde a função recebe os argumentos (assim como na funcoes tradicionais);
- 2- "seta" => – responsável pelo nome “arrow”
- 3- E as chaves: o bloco de código que representa o corpo da função.
+// let nomes = ["Matheus", "Lucas", "Jose"];
 
-*/
+// //console.log(nomes.includes("Maria"));
 
-function somar(a, b){
-  let total = a + b;
-  return console.log(total);
-}
+// if(nomes.includes("Matheus")){
+//   console.log("ESTA NA LISTA")
+// }else{
+//   console.log("NAO ESTA NA LISTA")
+// }
 
-//somar(10, 30);
+let nome = "Matheus";
 
+//console.log(nome.startsWith("Mat"))
 
-let subtrair = (valor1, valor2) => {
-let total = valor1 - valor2;
-console.log(total);
-}
-
-//subtrair(50, 25);
-
-
-
-let numeros = [1, 3, 5, 10];
-
-numeros.map((item) => {
-console.log(item);
-})
-
+console.log(nome.endsWith("eus"))
